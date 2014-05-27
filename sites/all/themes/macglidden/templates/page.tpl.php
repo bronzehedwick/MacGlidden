@@ -80,13 +80,13 @@
 
       <?php if ($page['triptych_second']): ?>
         <div id="triptych-second" class="column">
-          <?php print render($page['triptych-second']); ?>
+          <?php print render($page['triptych_second']); ?>
         </div> <!-- /.section, /#triptych-second -->
       <?php endif; ?>
 
       <?php if ($page['triptych_third']): ?>
         <div id="triptych-third" class="column">
-          <?php print render($page['triptych-third']); ?>
+          <?php print render($page['triptych_third']); ?>
         </div> <!-- /.section, /#triptych-third -->
       <?php endif; ?>
     </div>
