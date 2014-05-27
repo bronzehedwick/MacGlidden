@@ -92,6 +92,9 @@ regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[triptych_first] = Triptych first
+regions[triptych_second]= Triptych second
+regions[triptych_third] = Triptych third
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 
