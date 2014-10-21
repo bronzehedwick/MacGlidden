@@ -15,6 +15,10 @@ environment = :development
 firesass = false
 #firesass = true
 
+# In development, we can source maps.
+#sourcemap = false
+sourcemap = true
+
 
 # Location of the theme's resources.
 css_dir         = "css"
