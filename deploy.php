@@ -9,10 +9,10 @@
 
   // The commands
   $commands = array(
-    'echo $PWD',
-    'whoami',
     'git pull',
     'git status',
+    'drush updatedb -y',
+    'drush features-revert-all -y',
     'cd sites/all/themes/macglidden && compass compile --boring',
     '/usr/bin/drush cache-clear all',
   );
