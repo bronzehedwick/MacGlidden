@@ -8,7 +8,7 @@
 /**
  * Implements hook_jcarousel_skin_info().
  */
-function macglidden_module_jcarousel_skin_info() {
+function custom_mac_jcarousel_skin_info() {
   $skins = array();
 
   $skins['mac'] = array(
