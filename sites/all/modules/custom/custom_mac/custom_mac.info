@@ -1,0 +1,8 @@
+name = Custom Mac
+description = "Custom functionality for the MacGlidden site."
+package = Custom
+core = 7.x
+version = "7.x-0.1"
+core = "7.x"
+project = "custom_mac"
+

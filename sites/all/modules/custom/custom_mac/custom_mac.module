@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * MacGlidden custom module.
+ */
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function macglidden_module_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['mac'] = array(
+    'title' => t('Mac'),
+    'file' => 'custom/custom_mac/skins/mac/jcarousel-mac.css',
+  );
+
+  return $skins;
+}
