@@ -13,7 +13,7 @@ function custom_mac_jcarousel_skin_info() {
 
   $skins['mac'] = array(
     'title' => t('Mac'),
-    'file' => 'custom/custom_mac/skins/mac/jcarousel-mac.css',
+    'file' => 'skins/mac/jcarousel-mac.css',
   );
 
   return $skins;
