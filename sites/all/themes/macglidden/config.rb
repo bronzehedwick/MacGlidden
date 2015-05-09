@@ -8,16 +8,14 @@
 
 
 # Change this to :production when ready to deploy the CSS to the live server.
-environment = :development
-#environment = :production
+environment = (ENV['MAG_ENV'] == 'production') ? ':production' : ':development'
 
 # In development, we can turn on the FireSass-compatible debug_info.
 firesass = false
 #firesass = true
 
-# In development, we can source maps.
-#sourcemap = false
-sourcemap = true
+# In development, we can use source maps.
+sourcemap = (environment == :production) ? false : true
 
 
 # Location of the theme's resources.
