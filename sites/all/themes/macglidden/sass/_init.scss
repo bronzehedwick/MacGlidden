@@ -77,7 +77,7 @@ $georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
 
 $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
-$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$helvetica:       "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
@@ -85,8 +85,8 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $helvetica; // The font family set on the html element.
+$font-body:        $helvetica;
 $font-monospace:   $courier;
 
 
