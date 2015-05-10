@@ -35,3 +35,11 @@
     @include element-invisible-off;
   }
 }
+
+// Makes background images always fill the available space
+@mixin background-full {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

@@ -34,6 +34,7 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -59,7 +60,6 @@ $zen-auto-include-item-base: false;
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: $nav-height;
-    position: relative;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */

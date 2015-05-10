@@ -8,10 +8,40 @@
  */
 
 /**
+ * Header
+ */
+
+.header {
+  color: #fff;
+  height: 400px;
+  @include background-full;
+  background-image: url(http://www.vintage.it/backgrounds/Led-Zeppelin_wallpaper_1680x1050.jpg); // tmp
+}
+
+.view-id-front_video {
+  @media all and (min-width: 550px) {
+    position: absolute;
+    left: 50%;
+
+    .view-content {
+      position: relative;
+      right: 50%;
+      top: -5px;
+    }
+  }
+}
+
+/**
  * Youtube Videos.
  */
 
 .media-youtube-player {
   max-width: 100%;
+  height: 200px;
+
+  @media all and (min-width: 550px) {
+    width: 533px;
+    height: 325px;
+  }
 }
 
