@@ -56,17 +56,29 @@ $zen-auto-include-item-base: false;
 }
 
 /* Navigation bar */
+#main {
+  /* Move all the children of #main down to make room. */
+  padding-top: $nav-height;
+}
+#navigation {
+  /* Move the navbar up inside #main's padding. */
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: $nav-height;
+}
+#block-system-main-menu {
+  display: none;
+}
 @media all and (min-width: 480px) {
-  #main {
-    /* Move all the children of #main down to make room. */
-    padding-top: $nav-height;
-  }
   #navigation {
-    /* Move the navbar up inside #main's padding. */
-    position: absolute;
-    top: 0;
-    height: $nav-height;
-    width: $zen-grid-width;
+    top: 20px;
+  }
+  #block-system-main-menu {
+    display: block;
+  }
+  #mag-mmenu {
+    display: none;
   }
 }
 
