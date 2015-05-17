@@ -105,7 +105,7 @@
   &:link,
   &:visited {
     color: #fff;
-    text-shadow: 1px 1px $background-color;
+    text-shadow: 1px 1px $shadow-color;
     text-decoration: none;
   }
 
@@ -118,7 +118,7 @@
 /* The slogan (or tagline) of a website. */
 .header__site-slogan {
   margin: 0;
-  text-shadow: 1px 1px $background-color;
+  text-shadow: 1px 1px $shadow-color;
 }
 
 /* The secondary menu (login, etc.) */
@@ -158,9 +158,22 @@
     li {
       /* A simple method to get navigation links to appear in one line. */
       float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
+      margin-left: 2px;
+      margin-top: -10px;
+      padding: 10px; /* LTR */
       list-style-type: none;
       list-style-image: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-size: $h3-font-size;
+
+      &:hover {
+        background-color: $background-transparent-color;
+      }
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
@@ -502,7 +515,7 @@ span.field-label {
 
 /* The active item in a Drupal menu. */
 .menu a.active {
-  color: #000;
+  color: $tertiary-color;
 }
 
 /**

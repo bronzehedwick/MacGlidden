@@ -6,7 +6,9 @@
 $primary-color: #208E2C;
 $secondary-color: #1CAAE9;
 $tertiary-color: #B10DC9;
-$background-color: #666;
+$background-color: #ddd;
+$background-transparent-color: rgba(221, 221, 221, 0.3);
+$shadow-color: #666;
 
 $link-color: $primary-color;
 $link-hl-color: lighten($primary-color, 10%);
