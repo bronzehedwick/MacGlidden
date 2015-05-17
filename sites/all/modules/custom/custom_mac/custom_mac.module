@@ -18,3 +18,44 @@ function custom_mac_jcarousel_skin_info() {
 
   return $skins;
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_mac_block_info() {
+  $blocks['copyright'] = array(
+    'info' => t('Copyright Message'),
+    'status' => TRUE,
+    'region' => 'footer',
+    'weight' => 0,
+    'visibility' => 0,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_mac_block_view($delta='') {
+  $block = array();
+
+  switch ($delta) {
+  case 'copyright':
+    $block['subject'] = '';
+    $block['content'] = copyright_contents();
+    break;
+  }
+
+  return $block;
+}
+
+/**
+ * copyright html block
+ * @return string
+ */
+function copyright_contents() {
+  return '
+    <small>Copyright ' . date('Y')  . ' MacGlidden</small>
+    ';
+}
