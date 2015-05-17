@@ -36,15 +36,20 @@
   }
 }
 
+// Make a background image fill all available space
+@mixin background-full {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 // Generates a responsive background that will always fill the available space
 @mixin background($name) {
   $url: '/sites/all/themes/macglidden/images/backgrounds/' + $name + '.jpg';
   $url_lg: '/sites/all/themes/macglidden/images/backgrounds/' + $name + '_lg.jpg';
 
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  @include background-full;
   background-image: url($url);
 
   @media all and (min-width: 550px) {

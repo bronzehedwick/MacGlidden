@@ -86,3 +86,17 @@
     padding-right: 100px;
   }
 }
+
+/**
+ * Picture Slideshow.
+ */
+
+#block-views-picture-slideshow-block {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.views-slideshow-cycle-main-frame {
+  max-width: 100%;
+  margin: 0 auto;
+}
