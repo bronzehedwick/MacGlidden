@@ -1,0 +1,14 @@
+//
+// Color palette partial
+// This file contains variables for all colors in use on the site.
+//
+
+$primary-color: #208E2C;
+$secondary-color: #1CAAE9;
+$tertiary-color: #B10DC9;
+$background-color: #666;
+
+$link-color: $primary-color;
+$link-hl-color: lighten($primary-color, 10%);
+
+$link-visited-color: $tertiary-color;

@@ -105,6 +105,7 @@
   &:link,
   &:visited {
     color: #fff;
+    text-shadow: 1px 1px $background-color;
     text-decoration: none;
   }
 
@@ -117,6 +118,7 @@
 /* The slogan (or tagline) of a website. */
 .header__site-slogan {
   margin: 0;
+  text-shadow: 1px 1px $background-color;
 }
 
 /* The secondary menu (login, etc.) */

@@ -48,6 +48,6 @@
   background-image: url($url);
 
   @media all and (min-width: 550px) {
-    background-image: $url_lg;
+    background-image: url($url_lg);
   }
 }
