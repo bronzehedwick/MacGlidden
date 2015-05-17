@@ -94,9 +94,45 @@
 #block-views-picture-slideshow-block {
   margin-left: -10px;
   margin-right: -10px;
+  position: relative;
 }
 
 .views-slideshow-cycle-main-frame {
   max-width: 100%;
   margin: 0 auto;
+}
+
+.views-slideshow-controls-bottom {
+  text-align: center;
+}
+
+.views-slideshow-cycle-main-frame-row {
+  margin: 0 auto;
+}
+
+#views_slideshow_controls_text_previous_picture_slideshow-block,
+#views_slideshow_controls_text_next_picture_slideshow-block {
+  a {
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 22;
+    outline: none;
+    font-size: 0;
+  }
+}
+
+#views_slideshow_controls_text_previous_picture_slideshow-block {
+}
+
+#views_slideshow_controls_text_next_picture_slideshow-block {
+  a {
+    left: 50%;
+  }
+}
+
+#views_slideshow_controls_text_pause_picture_slideshow-block {
+   display: none;
 }
