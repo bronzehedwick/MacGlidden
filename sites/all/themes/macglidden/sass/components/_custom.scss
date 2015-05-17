@@ -14,8 +14,7 @@
 .header {
   color: #fff;
   height: 400px;
-  @include background-full;
-  background-image: url(http://www.vintage.it/backgrounds/Led-Zeppelin_wallpaper_1680x1050.jpg); // tmp
+  @include background('setup2');
 }
 
 .view-id-front_video {
