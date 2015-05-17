@@ -94,7 +94,13 @@
     <div id="navigation">
 
       <?php if ($main_menu): ?>
-        <button id="mag-mmenu" type="button">Open</button>
+        <div id="mag-mmenu">
+          <svg viewbox="0 0 64 64">
+            <line id="nav-line-1" x1="8" x2="56" y1="16" y2="16" color="#fff" class="nav-line" />
+            <line id="nav-line-2" x1="8" x2="56" y1="32" y2="32" color="#fff" class="nav-line" />
+            <line id="nav-line-3" x1="8" x2="56" y1="48" y2="48" color="#fff" class="nav-line" />
+          </svg>
+        </div>
       <?php endif; ?>
 
       <?php print render($page['navigation']); ?>

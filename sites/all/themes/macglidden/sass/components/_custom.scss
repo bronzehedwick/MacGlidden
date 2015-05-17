@@ -55,6 +55,23 @@
 }
 
 /**
+ * Mobile hamburger menu.
+ */
+
+$mmenu-size: 42px;
+
+#mag-mmenu {
+  width: $mmenu-size;
+  height: $mmenu-size;
+  cursor: pointer;
+
+  .nav-line {
+    stroke: #fff;
+    stroke-width: 3px;
+  }
+}
+
+/**
  * Youtube Videos.
  */
 
@@ -134,7 +151,7 @@
 }
 
 #views_slideshow_controls_text_pause_picture_slideshow-block {
-   display: none;
+  display: none;
 }
 
 /**
@@ -142,5 +159,5 @@
  */
 
 #block-custom-mac-copyright {
-   text-align: center;
+  text-align: center;
 }
