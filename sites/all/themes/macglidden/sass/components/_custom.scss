@@ -139,6 +139,32 @@ $mmenu-size: 42px;
     z-index: 22;
     outline: none;
     font-size: 0;
+
+    &:before,
+    &:after {
+      font-size: 128px;
+      color: rgba(255, 255, 255, 0.5);
+      position: relative;
+      top: 45%;
+    }
+  }
+}
+
+#views_slideshow_controls_text_previous_picture_slideshow-block {
+  a {
+    &:before {
+      left: 8%;
+      content: "<";
+    }
+  }
+}
+
+#views_slideshow_controls_text_next_picture_slideshow-block {
+  a {
+    &:after {
+      right: 8%;
+      content: ">";
+    }
   }
 }
 
