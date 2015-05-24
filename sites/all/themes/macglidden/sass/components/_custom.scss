@@ -33,6 +33,7 @@
     }
   }
 
+  .media-vimeo-video,
   .media-youtube-video {
     line-height: 0;
   }
@@ -76,6 +77,7 @@ $mmenu-size: 42px;
  * Youtube Videos.
  */
 
+.media-vimeo-player,
 .media-youtube-player {
   position: relative;
   max-width: 100%;
