@@ -144,10 +144,15 @@ $mmenu-size: 42px;
 
     &:before,
     &:after {
-      font-size: 128px;
+      font-size: 40px;
+      font-family: "macglidden", $helvetica;
       color: rgba(255, 255, 255, 0.5);
       position: relative;
-      top: 45%;
+      top: 50%;
+
+      @media all and (min-width: 760px) {
+        font-size: 70px;
+      }
     }
   }
 }
@@ -155,8 +160,12 @@ $mmenu-size: 42px;
 #views_slideshow_controls_text_previous_picture_slideshow-block {
   a {
     &:before {
-      left: 8%;
-      content: "<";
+      left: -30%;
+      content: '\e801';
+
+      @media all and (min-width: 760px) {
+        left: 8%;
+      }
     }
   }
 }
@@ -164,8 +173,12 @@ $mmenu-size: 42px;
 #views_slideshow_controls_text_next_picture_slideshow-block {
   a {
     &:after {
-      right: 8%;
-      content: ">";
+      right: -30%;
+      content: '\e802';
+
+      @media all and (min-width: 760px) {
+        right: 8%;
+      }
     }
   }
 }
