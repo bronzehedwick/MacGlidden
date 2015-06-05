@@ -167,6 +167,7 @@
       transition: background-color 0.3s;
       font-size: $h3-font-size;
 
+      &.active-trail,
       &:hover {
         background-color: $background-transparent-color;
       }
