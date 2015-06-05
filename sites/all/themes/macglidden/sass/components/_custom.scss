@@ -13,8 +13,16 @@
 
 .header {
   color: #fff;
-  height: 375px;
+  height: 175px;
   @include background('setup2');
+
+  @media all and (min-width: 550px) {
+    height: 275px;
+  }
+}
+
+.front .header {
+  height: 375px;
 
   @media all and (min-width: 550px) {
     height: 475px;
