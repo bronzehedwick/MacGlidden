@@ -24,3 +24,6 @@ sites/all/themes/README.txt
 
 # Ignore generated css
 sites/all/themes/macglidden/css/*
+
+# OS X Filesystem
+.DS_Store
