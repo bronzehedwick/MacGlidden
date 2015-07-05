@@ -1079,7 +1079,7 @@ function theme_mmenu_tree(array $block = array(
   }
   foreach ($tree as $item) {
     $cur_path = url($_GET['q']);
-    $menu_path = url($item['link']['link_path']);
+    $menu_path = check_url(url($item['link']['link_path']));
     // Adds classes to li in order to do more customization changes.
     $li_class = array();
     $li_class[] = 'mmenu-mm-list-mlid-' . $item['link']['mlid'];
@@ -1089,7 +1089,7 @@ function theme_mmenu_tree(array $block = array(
     $my_menu_path = trim($my_menu_path, '/');
     $my_menu_path = str_replace('/', '-', $my_menu_path);
     if (!empty($my_menu_path)) {
-      $li_class[] = 'mmenu-mm-list-path-' . $my_menu_path;
+      $li_class[] = 'mmenu-mm-list-path-' . check_plain($my_menu_path);
     }
     if ($cur_path == $menu_path) {
       $li_class[] = 'active-trail';
