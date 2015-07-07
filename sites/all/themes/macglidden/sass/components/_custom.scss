@@ -211,3 +211,19 @@ $mmenu-size: 42px;
 #block-custom-mac-copyright {
   text-align: center;
 }
+
+/**
+ * Tables
+ */
+
+.views-table {
+  margin: 0 auto;
+
+  .active {
+    background-color: transparent;
+  }
+
+  .views-field-title {
+    padding: 5px 20px;
+  }
+}
