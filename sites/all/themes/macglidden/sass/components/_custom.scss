@@ -227,3 +227,44 @@ $mmenu-size: 42px;
     padding: 5px 20px;
   }
 }
+
+/**
+ * Reviews
+ */
+
+.view-reviews {
+  .views-row {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+
+    @media all and (min-width: 550px) {
+      float: left;
+      width: 40%;
+      min-height: 410px;
+    }
+  }
+
+  .views-field-field-reviewer,
+  .views-field-field-organization,
+  .views-field-field-event,
+  .views-field-field-event-date {
+     font-size: 0.75em; /* 12px */
+
+     .views-label {
+       font-weight: bold;
+     }
+  }
+
+}
+
+blockquote {
+  color: #888;
+  line-height: 1.75em;
+
+  @media all and (min-width: 550px) {
+    font-size: 1.3em;
+    border-left: 4px solid #aaa;
+    padding-left: 10px;
+  }
+}
