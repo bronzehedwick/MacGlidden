@@ -8,6 +8,38 @@
  */
 
 /**
+ * Elements
+ */
+
+blockquote {
+  color: #888;
+  line-height: 1.75em;
+
+  @media all and (min-width: 550px) {
+    font-size: 1.3em;
+    border-left: 4px solid #aaa;
+    padding-left: 10px;
+  }
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  background-color: #333;
+  transition: background-color 0.5s;
+  color: #fff;
+  border: 0;
+
+  &:hover {
+    transition: background-color 0.5s;
+    background-color: #999;
+  }
+}
+
+.form-textarea-wrapper textarea {
+   width: auto;
+}
+
+/**
  * Header
  */
 
@@ -256,15 +288,4 @@ $mmenu-size: 42px;
      }
   }
 
-}
-
-blockquote {
-  color: #888;
-  line-height: 1.75em;
-
-  @media all and (min-width: 550px) {
-    font-size: 1.3em;
-    border-left: 4px solid #aaa;
-    padding-left: 10px;
-  }
 }
