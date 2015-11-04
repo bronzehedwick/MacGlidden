@@ -265,16 +265,21 @@ $mmenu-size: 42px;
  */
 
 .view-reviews {
+  .views-group {
+    @media screen and (min-width: 550px) {
+      float: left;
+      width: 48%;
+
+      &::first-of-type {
+        margin-right: 0.5%;
+      }
+    }
+  }
+
   .views-row {
     margin: 20px;
     padding: 20px;
     background-color: #f1f1f1;
-
-    @media all and (min-width: 550px) {
-      float: left;
-      width: 40%;
-      min-height: 410px;
-    }
   }
 
   .views-field-field-reviewer,
@@ -287,5 +292,4 @@ $mmenu-size: 42px;
        font-weight: bold;
      }
   }
-
 }
