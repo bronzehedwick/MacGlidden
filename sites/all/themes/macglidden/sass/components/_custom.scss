@@ -43,6 +43,15 @@ input[type=submit] {
  * Header
  */
 
+.front {
+  background-color: #000;
+}
+
+.front .header {
+  height: 50px;
+  background-image: none;
+}
+
 .header {
   color: #fff;
   height: 175px;
@@ -297,5 +306,29 @@ $mmenu-size: 42px;
      .views-label {
        font-weight: bold;
      }
+  }
+}
+
+/**
+ * Logo
+ */
+
+.candy-apples-logo {
+  display: block;
+  opacity: 0;
+
+  .path {
+    stroke: #fff;
+  }
+
+  &.visible {
+    opacity: 1;
+    transition: opacity 1.5s cubic-bezier(.6,.04,.98,.34);
+  }
+}
+
+.front {
+  .candy-apples-logo {
+    margin: 0 auto;
   }
 }

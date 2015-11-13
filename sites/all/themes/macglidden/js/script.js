@@ -17,8 +17,13 @@
 Drupal.behaviors.candy_apples_behavior = {
   attach: function(context, settings) {
 
+    // Make the Music menu item open in new tab
     // This is brittle as fuck
-    var menuLinks = $('.menu__link'), i;
+    var menuLinks = $('.menu__link'),
+        isFront = $('.front').length,
+        dimension = 0,
+        logo = $('.candy-apples-logo')[0],
+        logoClass = logo.getAttribute('class'), i;
 
     for (i = 0; i < menuLinks.length; i++) {
       if (menuLinks[i].innerHTML === 'Music') {
@@ -26,6 +31,18 @@ Drupal.behaviors.candy_apples_behavior = {
         break;
       }
     }
+
+    // Logo shit
+    if (isFront) {
+      // Set the dimensions to be within the viewable area
+      dimension = Math.floor(window.innerHeight - (window.innerHeight / 3));
+      logo.setAttribute('height', dimension);
+      logo.setAttribute('width', dimension);
+
+      // Make the logo visible
+      logo.setAttribute('class', logoClass + ' visible');
+    }
+
 
   }
 };
