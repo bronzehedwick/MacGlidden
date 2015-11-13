@@ -266,6 +266,12 @@ $mmenu-size: 42px;
 
 .view-reviews {
   .views-group {
+    &:first-child {
+      .views-row {
+        background-color: #fff8dc;
+      }
+    }
+
     @media screen and (min-width: 550px) {
       float: left;
       width: 48%;
