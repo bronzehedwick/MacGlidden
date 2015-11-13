@@ -14,10 +14,18 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.candy_apples_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    // This is brittle as fuck
+    var menuLinks = $('.menu__link'), i;
+
+    for (i = 0; i < menuLinks.length; i++) {
+      if (menuLinks[i].innerHTML === 'Music') {
+        menuLinks[i].setAttribute('target', '_blank');
+        break;
+      }
+    }
 
   }
 };
