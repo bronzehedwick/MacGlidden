@@ -33,17 +33,20 @@ Drupal.behaviors.candy_apples_behavior = {
     }
 
     // Logo shit
-    if (isFront) {
-      // Set the dimensions to be within the viewable area
-      dimension = Math.floor(window.innerHeight - (window.innerHeight / 3));
-      logo.setAttribute('height', dimension);
-      logo.setAttribute('width', dimension);
+    function setLogoDimensions() {
+      if (isFront) {
+        // Set the dimensions to be within the viewable area
+        dimension = Math.floor(window.innerHeight - (window.innerHeight / 3));
+        logo.setAttribute('height', dimension);
+        logo.setAttribute('width', dimension);
 
-      // Make the logo visible
-      logo.setAttribute('class', logoClass + ' visible');
+        // Make the logo visible
+        logo.setAttribute('class', logoClass + ' visible');
+      }
     }
+    setLogoDimensions();
 
-
+    window.addEventListener('resize', setLogoDimensions);
   }
 };
 

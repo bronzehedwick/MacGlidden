@@ -43,17 +43,13 @@ input[type=submit] {
  * Header
  */
 
-.front {
-  background-color: #000;
-}
-
 .front .header {
   height: 50px;
   background-image: none;
 }
 
 .header {
-  color: #fff;
+  //color: #fff;
   height: 175px;
   @include background('setup2');
 
@@ -318,7 +314,7 @@ $mmenu-size: 42px;
   opacity: 0;
 
   .path {
-    stroke: #fff;
+    stroke: #000;
   }
 
   &.visible {

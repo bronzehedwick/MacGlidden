@@ -104,8 +104,7 @@
 .header__site-link {
   &:link,
   &:visited {
-    color: #fff;
-    text-shadow: 1px 1px $shadow-color;
+    color: $body-color;
     text-decoration: none;
   }
 
@@ -117,8 +116,8 @@
 
 /* The slogan (or tagline) of a website. */
 .header__site-slogan {
+  color: $body-color;
   margin: 0;
-  text-shadow: 1px 1px $shadow-color;
 }
 
 /* The secondary menu (login, etc.) */
@@ -163,7 +162,6 @@
       padding: 10px; /* LTR */
       list-style-type: none;
       list-style-image: none;
-      /*border-radius: 5px;*/
       transition: background-color 0.3s;
       font-size: $h3-font-size;
 
@@ -173,8 +171,7 @@
       }
 
       a {
-        color: #fff;
-        text-shadow: 1px 1px $shadow-color;
+        color: $body-color;
       }
     }
   }
