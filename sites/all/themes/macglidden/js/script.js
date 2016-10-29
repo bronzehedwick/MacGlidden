@@ -22,8 +22,6 @@ Drupal.behaviors.candy_apples_behavior = {
     var menuLinks = $('.menu__link');
     var isFront = $('.front').length;
     var dimension = 0;
-    var logo = $('.candy-apples-logo')[0];
-    var logoClass = logo.getAttribute('class');
     var i;
 
     for (i = 0; i < menuLinks.length; i++) {
