@@ -40,6 +40,16 @@ input[type=submit] {
 }
 
 /**
+ * Page
+ */
+
+#content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
  * Header
  */
 
@@ -174,15 +184,6 @@ $mmenu-size: 42px;
 }
 
 /**
- * Views
- */
-
-.views-view-grid {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/**
  * Picture Slideshow.
  */
 
@@ -304,15 +305,6 @@ $mmenu-size: 42px;
     &:first-child {
       .views-row {
         background-color: #fff8dc;
-      }
-    }
-
-    @media screen and (min-width: 550px) {
-      float: left;
-      width: 48%;
-
-      &::first-of-type {
-        margin-right: 0.5%;
       }
     }
   }
