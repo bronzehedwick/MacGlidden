@@ -172,15 +172,7 @@ $mmenu-size: 42px;
  */
 
 #block-block-1 {
-  text-align: center;
   font-size: $h3-font-size;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media all and (min-width: 550px) {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
 
 /**
