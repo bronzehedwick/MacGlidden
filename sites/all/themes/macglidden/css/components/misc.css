@@ -107,7 +107,7 @@
 /* The link around the name of the website. */
 .header__site-link:link,
 .header__site-link:visited {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .header__site-link:hover,
