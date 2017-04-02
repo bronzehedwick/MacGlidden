@@ -43,6 +43,10 @@ input[type=submit] {
  * Header
  */
 
+.front .header {
+  height: 450px;
+}
+
 .header {
   color: #fff;
   height: 175px;
@@ -51,6 +55,12 @@ input[type=submit] {
   @media all and (min-width: 550px) {
     height: 275px;
   }
+}
+
+#navigation .menu__item a,
+.header__site-link:link span,
+.header__site-slogan {
+  color: #fff;
 }
 
 .page-reviews .header {
