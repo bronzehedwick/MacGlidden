@@ -57,7 +57,8 @@ input[type=submit] {
   }
 }
 
-#navigation .menu__item a,
+#navigation .menu .menu__item a,
+.header__site-link:link,
 .header__site-link:link span,
 .header__site-slogan {
   color: #fff;
