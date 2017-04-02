@@ -150,7 +150,6 @@ $mmenu-size: 42px;
   @media all and (min-width: 550px) {
     width: 533px;
     height: 325px;
-    position: static;
   }
 }
 
@@ -345,4 +344,14 @@ $mmenu-size: 42px;
   .candy-apples-logo {
     margin: 0 auto;
   }
+}
+
+/**
+ * Utilities.
+ */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
