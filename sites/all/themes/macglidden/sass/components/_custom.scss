@@ -54,11 +54,15 @@ input[type=submit] {
 .header {
   color: #fff;
   height: 175px;
-  @include background('setup2');
+  @include background('fall-into-the-dark');
 
   @media all and (min-width: 550px) {
     height: 275px;
   }
+}
+
+.page-private-events .header {
+  @include background('setup2');
 }
 
 #navigation .menu .menu__item a,
