@@ -102,8 +102,9 @@ input[type=submit] {
 }
 
 /**
- * Page titles.
+ * Page/block titles.
  */
+.block__title,
 .page__title {
   text-align: center;
 }
