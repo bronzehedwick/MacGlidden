@@ -44,10 +44,10 @@ input[type=submit] {
  */
 
 .front .header {
-  height: 450px;
+  height: 345px;
 
   @media all and (min-width: 550px) {
-    height: 345px;
+    height: 450px;
   }
 }
 
